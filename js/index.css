@@ -1,0 +1,226 @@
+html {
+  background: black;
+}
+
+body,
+.main {
+  background: url("../images/bg.jpg") no-repeat center top;
+}
+
+.main {
+  width: 1000px;
+  min-height: 930px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav {
+  top: 135px;
+  right: 383px;
+  position: absolute;
+  color: #fefdb8;
+}
+
+.nav-link {
+  margin-right: 4px;
+  width: 62px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fefdb8;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #efefef;
+}
+
+.site-box {
+  top: 240px;
+  position: relative;
+  height: 166px;
+}
+.site {
+  width: 300px;
+  height: 300px;
+  display: block;
+  position: absolute;
+  background: url("../images/site-bg.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.site span {
+  width: 100%;
+  margin-top:100px;
+  line-height: 80px;
+  font-size: 18px;
+  color: #c8c8c8;
+  text-align: center;
+  display: block;
+}
+.site.site-1 {
+  top: 0;
+  left: 0px;
+}
+
+.site.site-2 {
+  top: 0px;
+  left: 350px;
+}
+
+.site.site-3 {
+  top: 0px;
+  right: 0px;
+}
+.site .time {
+  font-size: 27px;
+  line-height: 0px;
+  text-align: center;
+  color: #fefefe;
+  font-family: Dotum;
+  letter-spacing: 2px;
+}
+.site .time small {
+  font-size: 27px;
+}
+.site-link {
+  left: 72px;
+  bottom: -70px;
+  width: 162px;
+  text-align: center;
+  line-height: 26px;
+  height: 46px;
+  display: block;
+  background: url("../images/btn_enter_n.png") no-repeat;
+  background-position-y: -50px;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+}
+.site-link:hover {
+  background: url("../images/btn_enter_n.png") no-repeat top center;
+}
+.reload {
+  padding: 24px 10px 25px 40px;
+  top: 650px;
+  left: 298px;
+  width: 403px;
+  height: 110px;
+  background: url("../images/btn_reload.png") no-repeat top center;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+}
+.reload:hover {
+  background: url("../images/btn_reload.png") no-repeat bottom center;
+}
+.reload .reload-icon {
+  width: 48px;
+  height: 48px;
+  background: transparent url("../images/reload.png") no-repeat center;
+  display: inline-block;
+}
+.reload div {
+  width: 260px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+}
+.reload .top-txt::before {
+  content: "已自动匹配最高速域名";
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+.reload .bottom-txt::before {
+  content: "点击重新匹配，访问更加流畅";
+}
+.active .top-txt::before {
+  content: "正在匹配中...";
+}
+.active .bottom-txt::before {
+  content: "请稍后...";
+}
+.active .reload-icon {
+  -webkit-animation: roll 1s infinite linear;
+  animation: roll 1s infinite linear;
+}
+@-webkit-keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tip {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0.9;
+  position: relative;
+  top: 560px;
+}
+.btn-box {
+  position: relative;
+  top: 645px;
+  text-align: center;
+}
+
+.btn-box .btn {
+  /* margin-left: -10px; */
+  width: 160px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background: url("../images/gbtns.png") no-repeat;
+  background-size: contain;
+}
+.btn-box .service {
+  background: url("../images/bottom-nav-service-bg.png") no-repeat;
+}
+
+.btn-box .btn:hover {
+  /* background-image: url("../images/gbtns.png"); */
+  /* background-position: center bottom; */
+}
+.cutomer-bg {
+  top: -113px;
+  right: 105px;
+  width: 120px;
+  height: 122px;
+  background: url("../images/7x24.png") no-repeat center;
+  position: absolute;
+}
+.copy-right {
+  text-align: center;
+  color: #fefdb8;
+  position: relative;
+  top: 696px;
+}
+.copy-right .link {
+  margin-top: 10px;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-right .link:hover {
+  color: #ccc;
+}
